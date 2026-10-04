@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Movie Search</h1>
+  <form id="searchForm" class="search-box">
+    <input id="searchInput" type="text" placeholder="Enter movie name..." autocomplete="off" required>
+    <button type="submit">Search</button>
+  </form>
+  <p id="message"></p>
+  <div id="movieContainer" class="movie-grid"></div>
+</div>
+
+<div id="movieModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn">&times;</button>
+    <img id="modalPoster" src="" alt="Movie Poster">
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <p><strong>Year:</strong> <span id="modalYear"></span></p>
+      <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+      <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+      <h3>Description</h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
